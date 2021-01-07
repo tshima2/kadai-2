@@ -1,6 +1,6 @@
 html {
   position: relative;
-  min-height: 100%;  
+  min-height: 100%;
 }
 body{
   text-align: center;
@@ -15,25 +15,45 @@ body{
 
 /* ここから */
 header{
+  width: 100%;
+  height: 40px;
+  
+  top: 0;
   background-color: #696969;
-  height: 50px;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  position: fixed;
 }
+
 header ul{
+  display: block;
+  height: 40px;
   list-style: none;
 }
 header ul a {
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 header li {
+  float: left;
+  width: auto;
 }
 
 header ul:after {
+  content: "";
+  display: block;
+  clear: both;
 }
+
+header .left{
+  float: left;
+}
+header .right{
+  float: right;
+}
+
 
 /* ここまでがheader部分の実装 */
 .main-header img {
@@ -66,32 +86,15 @@ header ul:after {
 footer {
   /* footer部分の実装 */
   width: 100%;  
-  height: 100px;
+  height: 80px;
   position: absolute;
   bottom: 0;  
-  background-color: #191970;  
-  /*   display: table;   */
-  
+  background-color: #2F4F4F;
 }
 footer p{
-  font-size: 1.5rem;  
+  font-size: 1rem;  
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
-  /*   display: table-cell;   */
 }
 /* ここに書かれているcssの記述はあくまでヒントとして用意された雛形なので、書かれている記述に従わずに実装したいという場合は、自分の好きに実装して構わない。課題要件を満たし、コードの品質が一定の水準にあると判定されればどのような実装でも合格になる。 */
-
-
-header .left{
-  float: left;
-}
-header .right{
-  float: right;
-}
-.clearfix: after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
